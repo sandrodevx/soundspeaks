@@ -40,7 +40,7 @@ src/
 
 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tuusuario/soundspeaks.git
+git clone https://github.com/sandrodevx/soundspeaks.git
 cd soundspeaks
 ```
 
