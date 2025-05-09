@@ -1,0 +1,122 @@
+// Variables
+$primary-color: #000000;
+$secondary-color: #ff7300; // Naranja neón
+$blue-neon: #00acff;
+$purple-neon: #b100ff;
+$font-primary: 'Orbitron', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+// Main container
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Page transitions
+.page-transition {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $primary-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient($blue-neon, $purple-neon);
+  border-radius: 4px;
+
+  &:hover {
+    background: $secondary-color;
+  }
+}
+
+// Button styles
+.btn-neon {
+  background-color: transparent;
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+  font-family: $font-primary;
+  padding: 8px 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $secondary-color;
+    z-index: -1;
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: $primary-color;
+    text-shadow: none;
+
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+// Section styles
+.section {
+  padding: 80px 0;
+
+  &-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  &-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 400;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Wave divider
+.wave-divider {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+
+  svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+  }
+} 

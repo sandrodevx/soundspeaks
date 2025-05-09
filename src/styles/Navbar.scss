@@ -1,0 +1,103 @@
+// Variables
+$primary-color: #000000;
+$secondary-color: #ff7300; // Naranja neón
+$blue-neon: #00acff;
+$purple-neon: #b100ff;
+$navbar-height: 80px;
+$navbar-scrolled-height: 60px;
+
+.navbar {
+  background-color: rgba($primary-color, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  padding: 0;
+  height: $navbar-height;
+  
+  &.scrolled {
+    background-color: rgba($primary-color, 0.85);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    height: $navbar-scrolled-height;
+  }
+
+  .navbar-brand {
+    img {
+      height: 40px;
+      transition: all 0.3s ease;
+      
+      .scrolled & {
+        height: 30px;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    
+    &:focus {
+      box-shadow: none;
+    }
+    
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 115, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+
+  .nav-link {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    position: relative;
+    font-weight: 500;
+
+    &:hover, &.active {
+      color: $secondary-color;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      background: $secondary-color;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    &:hover::after, &.active::after {
+      width: 70%;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+
+    .nav-link {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: rgba($primary-color, 0.95);
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    margin-top: 0.5rem;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+} 

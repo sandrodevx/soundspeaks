@@ -1,0 +1,139 @@
+// Variables
+$primary-color: #000000;
+$secondary-color: #ff7300; // Naranja neón
+$blue-neon: #00acff;
+$purple-neon: #b100ff;
+
+.track-list {
+  margin: 2rem 0;
+}
+
+.track-card {
+  background-color: #0c0c0c;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    
+    .track-image {
+      .overlay {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .track-image {
+    position: relative;
+    overflow: hidden;
+    
+    img {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .play-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: $secondary-color;
+      border: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba($secondary-color, 0.7);
+      
+      &:hover {
+        transform: scale(1.1);
+        background: lighten($secondary-color, 5%);
+      }
+    }
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+    background-color: #0c0c0c;
+    
+    .card-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      color: white;
+    }
+    
+    .artist {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 1rem;
+    }
+    
+    .track-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .duration {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      
+      .track-actions {
+        display: flex;
+        gap: 0.5rem;
+        
+        .action-btn {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          background: transparent;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.9rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          
+          &:hover {
+            border-color: $secondary-color;
+            color: $secondary-color;
+          }
+          
+          &.like-btn:hover {
+            color: #ff4757;
+            border-color: #ff4757;
+          }
+          
+          &.share-btn:hover {
+            color: $blue-neon;
+            border-color: $blue-neon;
+          }
+        }
+      }
+    }
+  }
+} 
