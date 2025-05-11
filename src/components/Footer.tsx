@@ -24,13 +24,13 @@ const Footer: React.FC = () => {
             <h5 className="neon-orange">SoundSpeaks</h5>
             <p>Your gateway to the best AfroHouse and Tech House music. Experience the sounds that speak to your soul.</p>
             <div className="social-links">
-              <a href="https://www.youtube.com/channel/SoundSpeaks" target="_blank" rel="noopener noreferrer" className="neon-orange">
+              <a href="https://www.youtube.com/@SoundSpeaks-s1" target="_blank" rel="noopener noreferrer" className="neon-orange">
                 <FaYoutube />
               </a>
-              <a href="https://www.instagram.com/soundspeaks" target="_blank" rel="noopener noreferrer" className="neon-blue">
+              <a href="https://www.instagram.com/sound_speaks/" target="_blank" rel="noopener noreferrer" className="neon-blue">
                 <FaInstagram />
               </a>
-              <a href="https://www.tiktok.com/@soundspeaks" target="_blank" rel="noopener noreferrer" className="neon-purple">
+              <a href="https://www.tiktok.com/@sound_speaks" target="_blank" rel="noopener noreferrer" className="neon-purple">
                 <FaTiktok />
               </a>
             </div>

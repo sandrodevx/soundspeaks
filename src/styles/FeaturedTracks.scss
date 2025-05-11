@@ -87,7 +87,14 @@ $purple-neon: #b100ff;
     .artist {
       font-size: 0.9rem;
       color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 0.5rem;
+    }
+    
+    .description {
+      font-size: 0.85rem;
+      color: $secondary-color;
       margin-bottom: 1rem;
+      font-style: italic;
     }
     
     .track-info {
@@ -117,6 +124,7 @@ $purple-neon: #b100ff;
           font-size: 0.9rem;
           cursor: pointer;
           transition: all 0.3s ease;
+          text-decoration: none;
           
           &:hover {
             border-color: $secondary-color;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { FaHeadphones, FaMusic, FaMicrophone } from 'react-icons/fa';
 import '../styles/About.scss';
 
@@ -25,11 +25,10 @@ const About: React.FC = () => {
           <Row className="align-items-center">
             <Col lg={6} className="mb-4 mb-lg-0">
               <div className="about-image">
-                <Image 
-                  src="https://images.unsplash.com/photo-1571266828278-1a0d54df378c?auto=format&fit=crop&w=800&q=80" 
-                  alt="SoundSpeaks Story" 
-                  fluid 
-                  className="rounded"
+                <img 
+                  src="/images/SoundSpeaks.png" 
+                  alt="SoundSpeaks Logo" 
+                  className="img-fluid"
                 />
               </div>
             </Col>
@@ -94,55 +93,20 @@ const About: React.FC = () => {
       <section className="about-team section">
         <Container>
           <h2 className="section-title text-center mb-5">The Team</h2>
-          <Row>
-            <Col md={4} className="mb-4">
+          <Row className="justify-content-center">
+            <Col md={6} className="mb-4">
               <div className="team-member">
                 <div className="member-image">
-                  <Image 
-                    src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=500&q=80" 
-                    alt="Team Member" 
-                    fluid 
-                    roundedCircle
+                  <img 
+                    src="/images/perfil-sandro.jpg" 
+                    alt="Sandro Gomez" 
+                    className="img-fluid rounded-circle"
                   />
                 </div>
-                <h3 className="neon-blue">Alex Rivera</h3>
-                <p className="member-role">Founder & Music Director</p>
+                <h3 className="neon-orange">Sandro Gomez</h3>
+                <p className="member-role">Founder & Music Producer</p>
                 <p className="member-bio">
-                  A passionate musician and DJ with over 10 years of experience in the electronic music scene.
-                </p>
-              </div>
-            </Col>
-            <Col md={4} className="mb-4">
-              <div className="team-member">
-                <div className="member-image">
-                  <Image 
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80" 
-                    alt="Team Member" 
-                    fluid 
-                    roundedCircle
-                  />
-                </div>
-                <h3 className="neon-orange">Sofia Martinez</h3>
-                <p className="member-role">Content Creator</p>
-                <p className="member-bio">
-                  Creative mind behind our visual identity and social media presence.
-                </p>
-              </div>
-            </Col>
-            <Col md={4} className="mb-4">
-              <div className="team-member">
-                <div className="member-image">
-                  <Image 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" 
-                    alt="Team Member" 
-                    fluid 
-                    roundedCircle
-                  />
-                </div>
-                <h3 className="neon-purple">Marcus Johnson</h3>
-                <p className="member-role">Sound Engineer</p>
-                <p className="member-bio">
-                  Technical wizard ensuring the highest quality sound in all our productions.
+                  A passionate musician with experience in the electronic music scene.
                 </p>
               </div>
             </Col>

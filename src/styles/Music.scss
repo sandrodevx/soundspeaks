@@ -67,6 +67,13 @@ $purple-neon: #b100ff;
           opacity: 0.7;
           margin-bottom: 0;
         }
+        
+        .description {
+          color: $secondary-color;
+          font-style: italic;
+          font-size: 0.85rem;
+          margin-top: 0.3rem;
+        }
       }
     }
     
@@ -234,7 +241,14 @@ $purple-neon: #b100ff;
       .artist {
         font-size: 0.9rem;
         color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 0.5rem;
+      }
+      
+      .description {
+        font-size: 0.85rem;
+        color: $secondary-color;
         margin-bottom: 1rem;
+        font-style: italic;
       }
       
       .track-meta {
@@ -280,6 +294,11 @@ $purple-neon: #b100ff;
           &.like-btn:hover {
             color: #ff4757;
             border-color: #ff4757;
+          }
+          
+          &.youtube-btn:hover {
+            color: #FF0000;
+            border-color: #FF0000;
           }
           
           &.share-btn:hover {

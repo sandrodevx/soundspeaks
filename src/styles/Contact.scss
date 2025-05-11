@@ -169,22 +169,6 @@ $purple-neon: #b100ff;
   }
 }
 
-.map-section {
-  .map-container {
-    height: 450px;
-    width: 100%;
-    
-    iframe {
-      filter: grayscale(100%) invert(92%) contrast(83%);
-      transition: filter 0.3s ease;
-      
-      &:hover {
-        filter: grayscale(0%) invert(0%) contrast(100%);
-      }
-    }
-  }
-}
-
 // Responsive styles
 @media (max-width: 991.98px) {
   .contact-header {

@@ -16,15 +16,14 @@ const Home: React.FC = () => {
           <Container>
             <Row className="align-items-center">
               <Col lg={8} className="mx-auto text-center">
-                <h1>
-                  <span className="neon-orange">Sound</span>
-                  <span className="neon-blue">Speaks</span>
-                </h1>
+                <div className="hero-logo">
+                  <img src="/images/SoundSpeaks.png" alt="SoundSpeaks Logo" className="hero-logo-img" />
+                </div>
                 <p className="hero-subtitle">Experience the rhythm of AfroHouse & Tech House</p>
                 <div className="hero-buttons">
                   <Link to="/music" className="btn btn-neon me-3">Explore Music</Link>
                   <a 
-                    href="https://www.youtube.com/channel/SoundSpeaks" 
+                    href="https://www.youtube.com/@SoundSpeaks-s1" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-outline-light"
@@ -33,13 +32,13 @@ const Home: React.FC = () => {
                   </a>
                 </div>
                 <div className="social-icons">
-                  <a href="https://www.youtube.com/channel/SoundSpeaks" target="_blank" rel="noopener noreferrer" className="neon-orange">
+                  <a href="https://www.youtube.com/@SoundSpeaks-s1" target="_blank" rel="noopener noreferrer" className="neon-orange">
                     <FaYoutube />
                   </a>
-                  <a href="https://www.instagram.com/soundspeaks" target="_blank" rel="noopener noreferrer" className="neon-blue">
+                  <a href="https://www.instagram.com/sound_speaks/" target="_blank" rel="noopener noreferrer" className="neon-blue">
                     <FaInstagram />
                   </a>
-                  <a href="https://www.tiktok.com/@soundspeaks" target="_blank" rel="noopener noreferrer" className="neon-purple">
+                  <a href="https://www.tiktok.com/@sound_speaks" target="_blank" rel="noopener noreferrer" className="neon-purple">
                     <FaTiktok />
                   </a>
                 </div>

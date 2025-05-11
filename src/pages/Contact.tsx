@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="content">
                     <h3>Location</h3>
-                    <p>Madrid, Spain</p>
+                    <p>Mallorca, Spain</p>
                   </div>
                 </div>
                 
@@ -103,13 +103,13 @@ const Contact: React.FC = () => {
                 <div className="social-links">
                   <h3>Follow Us</h3>
                   <div className="links">
-                    <a href="https://www.youtube.com/channel/SoundSpeaks" target="_blank" rel="noopener noreferrer" className="neon-orange">
+                    <a href="https://www.youtube.com/@SoundSpeaks-s1" target="_blank" rel="noopener noreferrer" className="neon-orange">
                       <FaYoutube />
                     </a>
-                    <a href="https://www.instagram.com/soundspeaks" target="_blank" rel="noopener noreferrer" className="neon-blue">
+                    <a href="https://www.instagram.com/sound_speaks/" target="_blank" rel="noopener noreferrer" className="neon-blue">
                       <FaInstagram />
                     </a>
-                    <a href="https://www.tiktok.com/@soundspeaks" target="_blank" rel="noopener noreferrer" className="neon-purple">
+                    <a href="https://www.tiktok.com/@sound_speaks" target="_blank" rel="noopener noreferrer" className="neon-purple">
                       <FaTiktok />
                     </a>
                   </div>
@@ -202,21 +202,6 @@ const Contact: React.FC = () => {
             </Col>
           </Row>
         </Container>
-      </section>
-      
-      <section className="map-section">
-        <div className="map-container">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.38440885297!2d-3.8196194295345785!3d40.437890755884354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1651145370465!5m2!1sen!2sus" 
-            width="100%" 
-            height="450" 
-            style={{ border: 0 }} 
-            allowFullScreen 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-            title="SoundSpeaks Location"
-          ></iframe>
-        </div>
       </section>
     </div>
   );
